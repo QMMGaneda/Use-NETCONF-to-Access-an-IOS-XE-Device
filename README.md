@@ -22,4 +22,37 @@ cisco@192.168.56.101's password:
 CSR1kv> en
 CSRk1v# show netconf-yang sessions
 
+<rpc message-id="103" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+ <get>
+  <filter>
+    <interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces"/>
+   </filter>
+ </get>
+</rpc>
+]]>]]>
+
+
+<rpc message-id="9999999" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+ <close-session />
+</rpc>
+
+CSR1kv# show netconf-yang sessions
+
+pip3 list --format=columns
+
+pip3 install ncclient
+
+pip3 list --format=columns | more
+
+
+
+
+
+
+
+
+
+
+
+
 
